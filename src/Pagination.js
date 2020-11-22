@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import ReactPaginate from 'react-paginate';
 import './Pagination.css';
+import { Link } from "react-router-dom";
 const Pagination = () => {
     const [offset, setOffset] = useState(0);
     const [data, setData] = useState([]);
@@ -32,8 +33,8 @@ const Pagination = () => {
     }, [offset])
 
     return (
-        <div>
-            {data}
+        <div className="paginate">
+            <div className="list">{data}</div>
             <ReactPaginate
                 previousLabel={"prev"}
                 nextLabel={"next"}
@@ -46,6 +47,7 @@ const Pagination = () => {
                 containerClassName={"pagination"}
                 subContainerClassName={"pages pagination"}
                 activeClassName={"active"} />
+            <Link className='btn' to="/">Home</Link>
         </div>
     );
 };

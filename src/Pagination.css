@@ -33,7 +33,16 @@
   }
   .page{
       margin-bottom: 10px;
+      text-align:center;
   }
   .page:first-child{
       margin-top:10px;
+  }
+ @keyframes scale-up-center {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
   }

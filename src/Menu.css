@@ -1,0 +1,21 @@
+.menu{
+    position: absolute;
+    top:0;
+    right:0px;
+    padding: 20px;
+    height:100%;
+    width:250px;
+}
+.menu span{
+    font-size: 50px;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: -60px;
+    padding: 20px;
+    transition: color .3s;
+}
+
+.nav{
+    margin-top: 60px;
+}

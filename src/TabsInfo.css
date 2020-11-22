@@ -1,0 +1,23 @@
+.tabContent img{
+    width:250px;
+    height:250px;
+    object-fit:cover;
+    margin:0;
+}
+.tabContent h2{
+    font-size: 28px;
+}
+.tabContent p{
+    font-size: 20px;
+    color:grey;
+    text-align: justify;
+    font-weight: normal;
+}
+.tabs .MuiAppBar-colorSecondary{
+    background-color:rgb(170, 142, 238);
+}
+
+.tabs .MuiTab-textColorInherit.Mui-selected{
+    color:black;
+    font-weight: bold;
+}
